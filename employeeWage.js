@@ -96,3 +96,10 @@ function isAllPartTime(dailyWage) {
     return dailyWage.includes("80");
 }
 console.log("Are any days part time?",mapDayWithWageArr.some(isAllPartTime));
+
+//uc7g 
+function totalDaysWorked(numOfDays, dailyWage) {
+    if(dailyWage > 0) numOfDays++;
+    return numOfDays;
+}
+console.log('Number of days worked: ',empDailyWageArr.reduce(totalDaysWorked, 0));
