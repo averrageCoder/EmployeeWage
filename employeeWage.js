@@ -60,3 +60,14 @@ function totalWages(totalWage, dailyWage) {
 }
 console.log("Employee wage with reduce: ", empDailyWageArr.reduce(totalWages, 0));
 
+//uc7b
+let dailyCnt = 0;
+function mapWithDailyWage(dailyWage) {
+    dailyCnt++;
+    return dailyCnt + " = " + dailyWage;
+}
+
+let mapDayWithWageArr = empDailyWageArr.map(mapWithDailyWage);
+console.log("Daily Wage Map");
+console.log(mapDayWithWageArr);
+
