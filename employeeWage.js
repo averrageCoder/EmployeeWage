@@ -46,3 +46,17 @@ while(totalHrs < MAX_HRS_IN_A_MONTH && totalDays < NUM_OF_WORKING_HOURS) {
 }
 let employeeWage =  calcDailyWage(totalHrs);
 console.log("Total days: ",totalDays," Total hours: ",totalHrs," Employee wage: ", employeeWage);
+
+//uc7a
+let totalEmployeeWage = 0;
+function sum(dailyWage) {
+    totalEmployeeWage+=dailyWage;
+}
+empDailyWageArr.forEach(sum);
+console.log("Total days: ",totalDays," Total hours: ",totalHrs," Employee wage: ", totalEmployeeWage);
+
+function totalWages(totalWage, dailyWage) {
+    return totalWage + dailyWage;
+}
+console.log("Employee wage with reduce: ", empDailyWageArr.reduce(totalWages, 0));
+
