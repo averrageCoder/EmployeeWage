@@ -90,3 +90,9 @@ function isAllFullTime(dailyWage) {
     return dailyWage.includes("160");
 }
 console.log("Are all days full time?",mapDayWithWageArr.every(isAllFullTime));
+
+//uc7f
+function isAllPartTime(dailyWage) {
+    return dailyWage.includes("80");
+}
+console.log("Are any days part time?",mapDayWithWageArr.some(isAllPartTime));
