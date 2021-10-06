@@ -71,3 +71,11 @@ let mapDayWithWageArr = empDailyWageArr.map(mapWithDailyWage);
 console.log("Daily Wage Map");
 console.log(mapDayWithWageArr);
 
+//uc7c
+function fullTimeWage(dailyWage) {
+    return dailyWage.includes(160);
+}
+
+let fullTimeWageArr = mapDayWithWageArr.filter(fullTimeWage);
+console.log("Full time Wage Array: ", fullTimeWageArr);
+
